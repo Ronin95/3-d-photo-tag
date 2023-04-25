@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "d3-phototag-app": {
+      "hosting": {
+        "app": [
+          "d3-phototag-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "d3-phototag-app"
+  }
+}

@@ -3,6 +3,7 @@ export const environment = {
     projectId: 'd3-phototag-app',
     appId: '1:390276842825:web:81913426faddfa11c28698',
     storageBucket: 'd3-phototag-app.appspot.com',
+    locationId: 'europe-west',
     apiKey: 'AIzaSyCuJ-qRqVEWUREOMZo6J0ul8VZuQxBcgfg',
     authDomain: 'd3-phototag-app.firebaseapp.com',
     messagingSenderId: '390276842825',

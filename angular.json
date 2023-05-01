@@ -79,9 +79,8 @@
             "ci": {
               "progress": false
             }
-          }, 
+          },
           "defaultConfiguration": "production"
-          
         },
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",

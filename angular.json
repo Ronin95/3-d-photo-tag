@@ -13,6 +13,17 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "dompurify",
+              "earcut",
+              "rbush",
+              "urijs",
+              "protobufjs",
+              "bitmap-sdf",
+              "grapheme-splitter",
+              "mersenne-twister",
+              "nosleep.js"
+            ],
             "outputPath": "www",
             "index": "src/index.html",
             "main": "src/main.ts",

@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { Cartesian3, Color, PinBuilder, Viewer } from 'cesium';
+import { Ion, Cartesian3, Color, PinBuilder, Viewer } from 'cesium';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Photo } from './photo';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CesiumService {
   private viewer!: Viewer;
-  constructor(private firestore: AngularFirestore) { }
+  constructor(private firestore: AngularFirestore) { Ion.defaultAccessToken = environment.cesium.accessToken }
 
   register(viewer: Viewer) {
     this.viewer = viewer;
